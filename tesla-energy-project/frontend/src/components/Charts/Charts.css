@@ -1,0 +1,55 @@
+.charts {
+  width: 100%;
+}
+
+.charts-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.charts-controls h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.time-range-selector {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.time-range-selector button {
+  background-color: #1a1f3a;
+  border: 1px solid #2a2f4a;
+  color: #a0a0a0;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+
+.time-range-selector button:hover {
+  background-color: #2a2f4a;
+  color: #ffffff;
+}
+
+.time-range-selector button.active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: #ffffff;
+}
+
+.chart-container {
+  margin-bottom: 2rem;
+}
+
+.no-data {
+  text-align: center;
+  color: #666;
+  padding: 4rem;
+  font-size: 1.1rem;
+}
+

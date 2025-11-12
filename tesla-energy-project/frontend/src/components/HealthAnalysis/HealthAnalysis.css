@@ -1,0 +1,159 @@
+.health-analysis {
+  width: 100%;
+}
+
+.analysis-description {
+  color: #a0a0a0;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.analysis-controls {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.analysis-type-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.analysis-type-selector label {
+  color: #a0a0a0;
+  font-size: 0.9rem;
+}
+
+.health-score-display {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.health-score-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid;
+  position: relative;
+}
+
+.health-score-circle.high {
+  border-color: #10b981;
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.1) 0%, rgba(16, 185, 129, 0.05) 100%);
+}
+
+.health-score-circle.medium {
+  border-color: #f59e0b;
+  background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(245, 158, 11, 0.05) 100%);
+}
+
+.health-score-circle.low {
+  border-color: #ef4444;
+  background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(239, 68, 68, 0.05) 100%);
+}
+
+.health-score-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.health-score-label {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+  margin-top: 0.5rem;
+}
+
+.health-score-description {
+  flex: 1;
+  min-width: 300px;
+}
+
+.health-score-description p {
+  color: #a0a0a0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.analysis-text {
+  color: #e0e0e0;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.analysis-text p {
+  margin-bottom: 1rem;
+}
+
+.analysis-text p:last-child {
+  margin-bottom: 0;
+}
+
+.recommendations-list {
+  list-style: none;
+  padding: 0;
+}
+
+.recommendations-list li {
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  background-color: #0f1425;
+  border-left: 4px solid #3b82f6;
+  border-radius: 4px;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+.recommendations-list li:last-child {
+  margin-bottom: 0;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.metric-item {
+  background-color: #0f1425;
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #2a2f4a;
+}
+
+.metric-item .metric-label {
+  font-size: 0.85rem;
+  color: #a0a0a0;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.metric-item .metric-value {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.analysis-timestamp {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.no-analysis {
+  text-align: center;
+  color: #666;
+  padding: 4rem;
+  font-size: 1.1rem;
+}
+
